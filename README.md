@@ -46,7 +46,7 @@ spec:
     - mountPath: /etc/kubernetes/scheduler-extender.yaml
       name: extender
       readOnly: true
-    - mountPath: /etc/kubernetes/scheduler-extender-policy.yaml
+    - mountPath: /etc/kubernetes/scheduler-extender-policy.json
       name: extender-policy
       readOnly: true
   hostNetwork: true
@@ -61,7 +61,7 @@ spec:
       type: FileOrCreate
     name: extender
   - hostPath:
-      path: /etc/kubernetes/scheduler-extender-policy.yaml
+      path: /etc/kubernetes/scheduler-extender-policy.json
       type: FileOrCreate
     name: extender-policy
 status: {}

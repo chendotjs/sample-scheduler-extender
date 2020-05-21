@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/cnych/sample-scheduler-extender/controller"
 	"log"
 	"math/rand"
 	"net/http"
 	"time"
 
 	"github.com/julienschmidt/httprouter"
+	"github.com/cnych/sample-scheduler-extender/controller"
 )
 
 func init() {
